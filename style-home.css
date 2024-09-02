@@ -1,0 +1,767 @@
+/*Borders*/
+header {
+    
+    width: 100%;
+    border: #ffffff solid;
+    background-color: #ffffff;
+    height: 100px;
+} 
+.container-navbar {
+    max-width: 81.5rem;
+    margin: 0 auto;
+    width: 100%;
+    align-items: center;
+}
+.navbar{
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 0;
+    padding-right: 0;
+    font-family: "Cairo";
+    background-color: #ffffff;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Bottom shadow */
+
+}
+
+.page-wrapper {
+    max-width: 81.5rem;
+    margin: 0 auto;
+    text-align: center;
+    z-index: -10;
+} 
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Cairo';
+}
+
+.navbar-brand{
+    font-weight: 800;
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    color: #8B68F1 !important;
+
+}
+
+.navbar-nav{
+    text-align: right;
+    
+}
+.nav-item{
+    text-align: right !important;
+    
+}
+/*button design as links*/
+.btn-account {
+    display: flex;
+    align-items: center;
+}
+
+.btn-account ul {
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-account .signIn {
+    color: #ffffff; 
+    background-color: rgba(139, 104, 241, 1); 
+    border-radius: 0.063rem; 
+    padding: 0.3rem 0.75rem; 
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium font weight */
+}
+
+.btn-account .signUp {
+    color: rgba(139, 104, 241, 1);
+    text-decoration: none; /* Remove underline */
+    font-weight: 500; /* Medium font weight */
+    margin-right: 0.5rem;
+    border:  0.063rem solid rgba(139, 104, 241, 1);
+    padding: 0.3rem 0.75rem; 
+
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4); /* Black background with opacity */
+}
+
+.modal-content {
+    position: relative;
+    background-color: #fff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 480px;
+    height: 600px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.btn-account p {
+    margin: 0;
+    padding: 0 0.5rem;
+    color: rgba(0, 0, 0, 0.6); /* Gray color */
+}
+/*Search form in the navbar*/
+/* Center the form in the navbar */
+.search-form {
+    margin-left: 3%;
+    position: relative;
+}
+
+/* Style the search input */
+.search-input {
+    width: 243px !important;
+    border-radius: 0.2rem; /* Rounded corners */
+    background-color: rgba(0, 0, 0, 0.04); /* Background color matching the image */
+    border: none; /* Remove the default border */
+    padding: 0.2rem 0.4rem; /* Add padding */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+    font-size: 0.875rem; /* Font size */
+    text-align: right; /* Center the placeholder text */
+
+}
+
+/* Placeholder text styling */
+.search-input::placeholder {
+    color: #888; /* Gray color for the placeholder */
+    opacity: 1; /* Ensure it's visible */
+}
+
+/* Style the search icon */
+.search-icon {
+    position: absolute;
+    text-align: left;
+    left: 0.875rem; /* Position the icon on the right side */
+    top: 50%;
+    font-weight: 300;
+    transform: translateY(-50%);
+    color: #888; 
+    font-size: 0.875rem; 
+}
+
+/*Carousel size*/
+.carousel{
+    width: auto;
+    height: auto;
+    margin-top: -21.913rem; /* Use margin if you need to offset it */
+    z-index: -1;
+}
+
+/*indicators*/
+.carousel .carousel-indicators li{
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff; 
+    border-radius: 50%; 
+    border: 2px solid #ffffff; 
+    margin: 1px; 
+}
+.carousel-indicators .active {
+    background-color: transparent; /* Ensure the active indicator is not filled */
+    border: 2px solid #fff; /* White border for the active indicator */
+}
+.carousel-control-prev{
+    display: none !important;
+}
+.carousel-control-next{
+    display: none !important;
+}
+
+.carousel-caption{
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15% !important;
+}
+
+.carousel-caption h1{
+    font-weight:bold ;
+}
+.carousel-caption p{
+    font-size: 1.5rem;
+    padding-top: 2%;
+}
+
+.carousel-caption .form-inline .search-Home {
+    width: 1232px; /* Adjusted from 'Hug' */
+    position: absolute;
+    top: 96px;
+    gap: 0px;
+    opacity: 1; /* Make sure it's visible */
+    text-align: center;
+    justify-content: center;
+}
+
+.search-input-Home {
+    width: 626px !important;
+    height: 19.02px;
+    position: absolute;
+    text-align: right;
+    left: 16%;
+    justify-content: center;
+    top: 50%;
+    gap: 0px;
+    opacity: 87%; /* Ensure visibility */
+    border-radius: 0%;
+    padding: 20px 30px; /* Adjust padding */
+}
+
+.search-iconHome {
+    width: 21.22px;
+    height: 19.02px;
+    position: absolute;
+    top: 53%;
+    left: 18%;
+    gap: 0px;
+    opacity: 1; /* Ensure visibility */
+    border: 2px solid transparent; /* Adjust the border, assuming 'border' was meant to imply some kind of outline */
+    color: #888;
+}
+.col{
+    background-color: #888;
+}
+.section1{
+    width: auto;
+    text-align: center;
+}
+.section1, .sub-section1, .sub2-section1{
+    display: grid;
+    grid-template-areas: "content content";
+    
+}
+.sub-section1{
+    background-color:#f489c0;
+    width: 100%;
+    
+}
+.sub-section1 img{
+    text-align: right;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+}
+.sub2-section1{
+    background-color: #8B68F1;
+    
+}
+
+.sub2-section1 img{
+    text-align: right;
+    mix-blend-mode: hard-light;
+    margin-left: 8.2%;
+    filter: drop-shadow(10px 10px 20px rgba(0, 0, 0, 0.3));
+}
+.sub-section1 .con-1{
+    text-align: center;
+    padding-top: 60%;
+    padding-left: 8%;
+}
+.sub-section1 h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-family:"Cairo", sans-serif;;
+    padding-bottom: 2%;
+    font-size: 32px;
+}
+.btn-search li{
+    color: #ffffff;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: 400; /* Medium font weight */
+    border:  2px solid #ffffff;
+    padding: 0.3rem 0.75rem; 
+    width: 233px;
+    margin-left: 20px;
+}
+
+.btn-search .searching{
+    color: #ffffff;
+}
+.sub2-section1 .con-2{
+    text-align: center;
+    padding-top: 60%;
+    padding-left: 8%;
+}
+.sub2-section1 h1{
+    color: #ffffff;
+    font-weight: 700;
+    font-family: "Cairo", sans-serif;;
+    padding-bottom: 2%;
+    font-size: 32px;
+}
+
+/*categories*/
+.nav-tabs {
+    display: flex;          /* Use Flexbox for layout */
+    justify-content: space-around;
+    direction: rtl;
+    width: 100%;     
+    padding: 0;
+    margin: 0;
+    list-style: none;    
+    font-size: 13px;
+    padding-top: 2%;
+    color: black;
+}
+
+.nav-tabs > li {
+    float: right; /* Make each tab float to the right */
+    flex: 1;
+    text-align: center; 
+}
+.nav-tabs > li > a {
+    display: block;         /* Make links fill the entire tab */
+    padding: 6px;          /* Add some padding to the tabs */
+    text-decoration: none;
+    position: relative;
+    color: #000000;
+    opacity: 70%;
+    white-space: nowrap; /* Prevents the text from wrapping */
+    text-align: center;  /* Center-aligns the text */
+}
+.nav-tabs > li.active > a,
+.nav-tabs >li.active > a:focus,
+.nav-tabs > li.active > a:focus{
+    border-bottom: none;
+    color: #000;
+    font-weight: bold;
+    opacity: 1;
+}
+.nav-tabs > li.active > a::after{
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    right: 0;
+    height: 3px;
+    font-weight: bold;
+    background-color: #8B68F1;
+    border-radius: 2px;
+}
+.tab-pane h3{
+    text-align: right;
+    padding-top: 3%;
+    font-weight: bold;
+}
+.card-deck{
+    direction: rtl !important;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px; /* Space between cards */
+    height: 400px;
+}
+#carouselExampleControls2 .card{
+    flex: 1;
+    max-width: 300px;
+    max-height: max-content;
+    border: none;
+    height: auto;
+    background: #444444;
+}
+
+#carouselExampleControls2 .card img:hover {
+    background: rgba(139, 68, 241, 0.5); /* Violet color with 50% opacity */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 50%; /* Hidden by default */
+    transition: opacity 0.3s ease; /* Smooth transition */
+    border: 0.5px solid #8B68F1;
+}
+
+.hover-button {
+    display: none;
+    background-color: #8B68F1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure it appears above other content */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+/* Show the button on hover */
+.card:hover .hover-button {
+    display: block;
+    opacity: 1;
+}
+
+/* Style the card image on hover to darken */
+.card:hover img {
+    filter: brightness(50%);
+}
+
+/* Add hover effect for the button */
+.hover-button:hover {
+    background-color: #6F4BC7;
+}
+
+.btn-details {
+    color: #fff;
+    background: rgba(139, 68, 241, 1); /* Solid violet background */
+    border: none;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.card:hover .overlay {
+    opacity: 1; /* Show the overlay on card hover */
+}
+
+.scrollable-container {
+    display: flex;
+    overflow-x: hidden;
+    padding: 10px;
+    gap: 20px; /* Space between cards */
+}
+.card-title{
+    /* iPhone 12 Pro Max */
+    position: absolute;
+    font-family: "Cairo", sans-serif;;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    font-stretch: ultra-expanded;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    color: rgba(0, 0, 0, 0.8);
+    justify-content: space-between;
+    font-weight: bold;
+}
+.stars{
+    font-size: 12px;
+    color: #EAC544;
+    margin-right: 0%;
+}
+.card-textf{
+
+    position: absolute;
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-top: 8%;
+    color: rgba(0, 0, 0, 0.8);
+
+}
+.card-text .text-muted{
+    position: absolute;
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 30px;
+    /* identical to box height */
+    display: flex;
+    align-items: center;
+    text-align: right;
+    padding-top: 16%;
+    color: #8B68F1 !important;
+}
+.btn-more{
+    padding-top: 0%;
+    display: flex;
+    justify-content: center;
+    text-align: center !important;
+    padding-bottom: 10%;
+    list-style: none;
+    
+}
+.btn-more li{
+    color: #ffffff;
+    list-style: none;
+    text-align: center;
+    text-decoration: none; /* Remove underline */
+    font-weight: 400; /* Medium font weight */
+    border:  2px solid #8B68F1;
+    padding: 0.3rem 0.75rem; 
+    width: 233px;
+    text-decoration-style: none;
+    margin-left: 20px;
+    background-color: #8B68F1;
+    text-decoration: none;
+    text-align: center !important;
+}
+
+.btn-more .more-info{
+    color: #ffffff;
+    text-align: center !important;
+}
+.links-footer{
+    color: #ffffff;
+    font-size: 14px;
+    text-decoration: none;
+}
+h6{
+    /* WYANA. */
+
+    position: absolute;
+    width: 89px;
+    height: 44px;
+
+    font-family: "Cairo", sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 44px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
+    padding-left: 30% !important;
+    color: rgba(255, 255, 255, 0.87);
+
+
+}
+.modal-body button{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-color: #8B68F1;
+    background: #8B68F1;
+    text-align: center;
+    border-radius: 0%;
+    margin-top: 5%; 
+}
+
+
+@media (max-width: 767px) {
+    .nav-tabs {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .carousel-item .col-sm-12 {
+        display: block;
+        margin: 0 auto;
+        float: none;
+      }
+    
+}
+
+@media (min-width: 768px) {
+    .dropdown {
+        display: none;
+    }
+
+    .nav-tabs {
+        display: flex;
+    }
+
+    .card {
+        width: 100vw; /* Make the card take the full width of the viewport */
+      }
+
+
+    
+}
+@media (max-width: 562px){
+    .carousel {
+        display: block; /* Ensure it is visible */
+        margin-top: 0;
+    }
+    .carousel-caption{
+        display: flex !important;
+        flex-direction: column;
+    }
+    
+    .carousel-caption h1{
+        font-size: 22px;
+    }
+    .carousel-caption p{
+        font-size: 16px;
+    }
+    .carousel-caption .search-Home{
+        margin-top: 20%;
+    }
+    .carousel-caption .search-input-Home{
+        padding-top: 5%;
+        width: 200px !important;
+        font-size: 14px;
+        padding-right: 2%;
+    }
+    .modal-title{
+        padding-right: 5% !important;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+    .sub-section1{
+        height: 200px;
+    }
+    .sub-section1 img{
+        height: 300px;
+        padding-bottom: 40%;
+    }
+    .sub-section1 h1{
+        font-size: 16px;
+        margin-left: 40%;
+    }
+    .sub-section1 ul{
+        width: 100px;
+        
+    }
+    .sub-section1 li{
+        width: 100px;
+        padding-top: 0%;
+
+    }
+
+    .sub2-section1{
+        height: 220px;
+        overflow-y: hidden;
+    }
+    .sub2-section1 img{
+        height: 300px;
+        padding-bottom: 30%;
+        margin-left: 32%;
+    }
+    .sub2-section1 h1{
+        font-size: 16px;
+    }
+    .sub2-section1 ul{
+        width: 100px;
+
+    }
+    .sub2-section1 li{
+        width: 100px;
+
+    }
+
+    .foot-row{
+        display: flex;
+        flex-direction: column;
+        margin-left: 0%;
+        align-items:unset !important;
+    }
+    .foot-row h4{
+        font-size: 19px !important;
+        
+    }
+
+    .input-group {
+        flex-wrap: nowrap; /* Ensure elements don't wrap */
+    }
+    .input-group .form-control {
+        width: 200px; /* Adjust the width of the input field */
+    }
+    .input-group .btn {
+        width: 100px;
+    }
+    .input-group .form-control, .input-group .btn {
+        margin-right: 5px;
+    }
+
+    
+    .container{
+        justify-content: center !important;
+    }
+    .card-img-top {
+        max-width: 80% !important;
+        height: auto;
+        text-align: center !important;
+        justify-content: center;
+        }
+        
+        .card-title {
+                font-size: 1.5rem; /* Adjust font size as needed */
+                display: flex;
+                flex-direction: column !important;
+                justify-content: center !important;
+                text-align: center !important;
+                position: relative;
+                padding-bottom: 0%;
+        }
+        
+        .card-text {
+        font-size: 0.85rem;
+        color: #6c757d;
+        justify-content: center;
+
+        }
+        
+        .card-price {
+        color: #6f42c1;
+        font-weight: bold;
+        text-align: center;
+        justify-content: center;
+        } 
+
+
+
+    
+.hover-button {
+    display: none;
+    background-color: #8B68F1;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    top: 30% ;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    z-index: 2; /* Ensure it appears above other content */
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 12px ;
+}
+
+/* Show the button on hover */
+.card:hover .hover-button {
+    display: block;
+    opacity: 1;
+}
+
+/* Style the card image on hover to darken */
+.card:hover img {
+    filter: brightness(50%);
+}
+
+/* Add hover effect for the button */
+.hover-button:hover {
+    background-color: #6F4BC7;
+}
+}
+#signInModal input::placeholder {
+    color: #383535 !important; /* Example: A light gray color */
+    opacity: 1; /* Ensures placeholder text is fully visible */
+}
+#signUpModal input::placeholder {
+    color: #383535 !important; /* Example: A light gray color */
+    opacity: 1; /* Ensures placeholder text is fully visible */
+}
+
+
